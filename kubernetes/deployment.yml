@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: KakaoMessages
+  name: kakaomessages
   labels:
-    app: KakaoMessages
+    app: kakaomessages
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: KakaoMessages
+      app: kakaomessages
   template:
     metadata:
       labels:
-        app: KakaoMessages
+        app: kakaomessages
     spec:
       containers:
-        - name: KakaoMessages
-          image: username/KakaoMessages:latest
+        - name: kakaomessages
+          image: admin35.azurecr.io/kakaomessages:latest
           ports:
             - containerPort: 8080
           readinessProbe:
