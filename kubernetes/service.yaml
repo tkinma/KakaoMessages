@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: KakaoMessages
+  name: kakaomessages
   labels:
-    app: KakaoMessages
+    app: kakaomessages
 spec:
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    app: KakaoMessages
+    app: kakaomessages
